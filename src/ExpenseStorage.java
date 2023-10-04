@@ -21,7 +21,7 @@ public class ExpenseStorage {
         try (BufferedReader r = new BufferedReader(new FileReader(FILENAME))){
             String ln;
             while ((ln = r.readLine()) != null) {
-                String[] individual = ln.split("'");
+                String[] individual = ln.split(",");
                 exps.add(new Expense(individual[0], individual[1], Double.parseDouble(individual[2])));
             }
         } catch (IOException e){
