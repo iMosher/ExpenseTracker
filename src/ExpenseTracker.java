@@ -7,6 +7,7 @@ public class ExpenseTracker {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Expense> expenses = ExpenseStorage.loadExpenses();
         Boolean uiBool = true;
+        ExpenseGUI GUI = new ExpenseGUI();
 
         //basic UI for Expense Tracker
         while (uiBool){
